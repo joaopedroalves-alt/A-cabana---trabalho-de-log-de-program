@@ -15,15 +15,15 @@ int main() {
 
     system("clear");
     cout << "\x1B[41m A Cabana \x1B[0m\n";
-    sleep(1);
+    sleep(2);
 
     system("clear");
     cout << "Um jogo por: João Pedro Santos Alves\n";
-    sleep(1);
+    sleep(2);
 
     system("clear");
     cout << "Você foi sequestrado e acorda preso em uma cabana abandonada...\n";
-    sleep(1);
+    sleep(2);
 
     int op;
     bool jogando=false;
@@ -96,16 +96,16 @@ int main() {
                     cout << "Não é possível chegar ao armário por causa da corrente, mas ele tem um molho de chaves pendurado que talvez de para pegar com algum objeto.\n";
                     if (temTabua && !temChaves) {
                         cout << "Usar tabua? 1-Sim\n";
-                        int e; cin >> e;
+                        int e; 
+                        cin >> e;
+                    
 
-                        else if (e == 1) {
+                        if (e == 1) {
                             cout << "Voce pega o molho de chaves.\n";
                             temChaves = true;
                         }
                     }
-                }
-
-                    if (!corrente) {
+                }   else {
                         cout << "Você consegue abrir o armário, nele tem diversos itens pessoais de alguém como roupas, papéis, sacos, fotos, mas não parecem ser úteis.\n";
                     }
                     break;
